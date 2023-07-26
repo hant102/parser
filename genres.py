@@ -1,0 +1,5 @@
+GENRE_ACTION = 'action-games'
+GENRE_ADVENTURE = 'priklyucheniya-games'
+GENRE_RPG = 'rpg-games'
+GENRE_STRATEGY = 'strategii-games'
+GENRE_SIMULATION = 'simulyatory-games'
