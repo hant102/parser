@@ -12,6 +12,8 @@ from genres import (
     GENRE_RPG,
     GENRE_STRATEGY,
     GENRE_SIMULATION,
+    GENRE_RACE,
+    GENRE_SHUTER,
 )
 
 URL_TEMPLATE = "https://m.moreigr.com"
@@ -148,17 +150,21 @@ def parse(url=URL_TEMPLATE):
     print("3. RPG Games")
     print("4. Strategy Games")
     print("5. Simulation Games")
-    print("6. All categories")
+    print("6. Racers Games")
+    print("7. Shuters Games")
+    print("8. All categories")
 
-    category_choice = input("Enter the number of the category to parse or '6' for all categories: ")
+    category_choice = input("Enter the number of the category to parse or '8' for all categories: ")
 
-    if category_choice != '6':
+    if category_choice != '8':
         category_url_map = {
             '1': GENRE_ACTION,
             '2': GENRE_ADVENTURE,
             '3': GENRE_RPG,
             '4': GENRE_STRATEGY,
             '5': GENRE_SIMULATION,
+            '6': GENRE_RACE,
+            '7': GENRE_SHUTER,
         }
         category_url = category_url_map.get(category_choice)
         if category_url:
